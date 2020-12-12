@@ -179,11 +179,19 @@ h2{
     color :blue;
     text-align: center;
 }
+.clima{
+    width: 100px;
+    height: 100px;
+    background-color:white;
+    text-align: center;
+     
+}
 .pie-datos{
     width: 50%;
     height: auto;
-   /* background-color: crimson;*/
-   padding-top: 100px;
+    margin-top: 50px;
+    margin-left: 30px;
+ padding-top: 100px;
 }
 
 
@@ -232,16 +240,19 @@ h2{
   }
   strong{
       padding:20px 20px 20px 20px;
-      font-family: 'Montserrat';
+      font-family: 'Oswald', sans-serif;
       font-size: 20px;
       margin-left:20px;
       margin-bottom: 20px;
       text-transform: uppercase;
       color:#1f53c5;
   }
-  .direccion{
+  /*.direccion{
       margin-bottom: 20px;
-  }
+      width: 200px;
+      height: 50;
+      background-color: floralwhite;
+  }*/
   .link-pie{
       background-image:linear-gradient(#FFF)50%,(#BBB);
       padding: 20px 35px;

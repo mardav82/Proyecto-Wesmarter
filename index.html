@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="menudesplegable.css">
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
-    
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     
 
     <title>Proyecto webmaster</title>
 </head>
 <body >
+
+<div class=clima>
+    <h3 id="ciudad"></h3>
+    <p id="contenido"></p>
+    <img src="imagenes/clima.jpg" alt="clima">    
+  </div> 
+ <script src="clima/clima.js"></script>
 <header>
+    
+   
+   
+      
     
     <div class="conteiner"></div>
 
@@ -69,15 +81,23 @@
 <div class="instalaciones">
   
    <h2> INSTALACIONES</h2>
-   
+   <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="imagenes/centro1.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="imagenes/centro2.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="imagenes/centro3.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="imagenes/centro4.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="imagenes/centro5.jpeg" alt=""></div>
+      <div class="swiper-slide"><img src="imagenes/centro6.jpeg" alt=""></div>
+    
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>   
 
    <div  class="imagen">
-    <img src="imagenes/centro1.jpeg" alt="">
-    <img src="imagenes/centro2.jpeg" alt="">
-    <img src="imagenes/centro3.jpeg" alt="">
-    <img src="imagenes/centro4.jpeg" alt="">
-    <img src="imagenes/centro5.jpeg" alt="">
-    <img src="iamgenes/centro6.jpeg" alt="">
+ 
     
     </div>
 
@@ -111,27 +131,27 @@
     
    
     <div class="pie-datos">
-    <div class="direccion">
+    <div class="controls">
     <strong> Dirección: Jose Marmol 77   Capital Federal</strong></div>
     <br>
     <br>
     <br>
-    <div class="direccion">
+    <div class="controls">
    <strong>Localidad: Caballito </strong></div>
    <br>
    <br>
    <br>
-   <div class="direccion">
+   <div class="controls">
    <strong>Codigo postal: 1183</strong></div>
    <br>
    <br>
    <br>
-   <div class="direccion">
+   <div class="controls">
    <strong>Teléfono : 4981-6653</strong></div>
   </div>
    <br>
    <section class="Formulario">
-    <form action="validad.php" method="POST">
+    <form name="contacto" netlify>
    
     <input class="controls" type="text"  placeholder="Ingrese su Nombre" required>
    
@@ -167,12 +187,19 @@
 
 
  <!-- Swiper JS -->
- <script src="../package/swiper-bundle.min.js"></script>
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
  <!-- Initialize Swiper -->
- <script>
-    var swiper = new Swiper('.swiper-container');
- </script>
+ 
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+ 
  
   
 
