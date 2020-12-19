@@ -13,6 +13,7 @@ body{
    
 }
 
+
 .conteiner{
    
   /*  max-width: 1000px;
@@ -28,6 +29,16 @@ body{
   
     
 }
+.titulo{
+    padding-left: 30px;
+    margin-top: 30px;
+    display: flex;
+}
+.titulo_principal{
+    flex-grow: 1;
+}
+
+
 
 /*.info-item{
     width: 400px;
@@ -87,14 +98,19 @@ body{
     border-radius: 5px 5px 5px 5px;
 
 }
+.submenu a{
+    background-color: violet;
+    
 
+}
 .nav a:hover{
     background-color:lightskyblue
 }
 .zona{
     
     display:block;
-    margin-bottom: 200px;
+   /* margin-bottom: 200px;*/
+   height: 400px;
    
 }
 h1{
@@ -128,7 +144,7 @@ h1{
     margin-bottom: 40px;
 }
 .instalaciones{
-    background-color: royalblue;
+    /*background-color: royalblue;*/
     max-width: 1000px;
     margin: auto;
     margin-bottom: 80px;
@@ -179,13 +195,7 @@ h2{
     color :blue;
     text-align: center;
 }
-.clima{
-    width: 100px;
-    height: 100px;
-    background-color:white;
-    text-align: center;
-     
-}
+
 .pie-datos{
     width: 50%;
     height: auto;
@@ -245,7 +255,7 @@ h2{
       margin-left:20px;
       margin-bottom: 20px;
       text-transform: uppercase;
-      color:#1f53c5;
+      color:white;
   }
   /*.direccion{
       margin-bottom: 20px;
@@ -263,6 +273,14 @@ h2{
       margin: auto;
       max-width: 940px;
       margin-bottom: 40px;
+  }
+  .clima{
+      width: 200px;
+      height: 150px;
+      background-color: skyblue;
+      margin-top: 30px;
+      border-radius: 30px;
+      text-align: center;
   }
  
   
@@ -284,6 +302,7 @@ h2{
    .link{
        border: 1px solid aliceblue;
    }
+ 
    
    
 }
