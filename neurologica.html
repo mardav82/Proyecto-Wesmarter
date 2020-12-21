@@ -1,35 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="menudesplegable.css">
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    
+    
+
+    <title>Proyecto webmaster</title>
 </head>
 <body>
-    <header>
-        <table class="titulo">
-           
-            <tr class="titulo">
-              <td align="left" class="titulo">
-                <h1>  Centro de Kisesiologia Esther Ofman</h1>
-              </td>
-              <td align="center" width="300">
-                 
-                 <img src="e-mail.jpg">
-                 estherofmanyequipo@yahoo.com.ar
-              </td>
-              <td align="right" width="300">
-                  
-                  Comunicate con Nosotros para pedir tu turno
-                 <img src="imagestel.png">  Telefono:4901-6653
-              </td>
-              </tr>
-             
-        
-        </table>
-</body>
-</html>
+<div class="titulo">
+<div class=clima>
+    <h3 id="ciudad"></h3>
+    <p> Temperatura:</p> <p id="contenido"></p> <p>Grados</p>
+    <img id="imagen" alt="clima">    
+  </div> 
+ <script src="clima/clima.js"></script>
+   <div class="titulo_principal"> 
+      <h1>ESTHER OFMAN<br>
+          Kinesiologia y rehabilitación
+      </h1> 
+   
+      <p class="kinesio">Kinesiologa  Esther Ofman</p>
+    </div>
+</div> 
+<header>
+   
+    
+    
+    <div class="conteiner"></div>
+
+       <nav class="nav">
+       <button class="nav-boton" id="boton" aria-label="Menu desplegable">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/></svg>
+       </button>
+    <ul class="nav-principal" id="navegacion">
+
+    <li>
+        <a href="index.html" class="link">Inicio</a>
+    </li>
+    <li class="desplegable">
+        <a href="#instalaciones" class="link">Tratamientos</a>
+    
+
+    <ul class="submenu">
+
+        <li><a href="motora.html"  class="link">Rehabilitación Motora</a></li>
+        <li><a href="traumatologica.html"  class="link">Kinesiologa Vestibular </a></li>
+        <li><a href="neurologica.html"  class="link">Kinesiologia Respiratoria</a> </li>
+    </ul>
+</li>
+    <li><a href="index.html"class="link">Obra sociales</a></li>
+    <li><a href="index.html"class="link">Contacto</a></li>
+    <li><a href="index.html"class="link">Instalaciones</a></li>
+    </ul>
+       </nav>
+
+   </div>
+</header> 
+<section>
+  <p style="font-size: 30px;margin-bottom: 30px;">
+    Kinesiología Respiratoria se le llama a una serie de tratamientos que son utilizados como apoyo y/o complemento para mejorar patologías del sistema respiratorio. Todas aquellas en las que se vea afectada la función pulmonar, ya sea en niños o en adultos.
+
+Estos procedimientos traen consigo maniobras manuales, ejercicios respiratorios, posiciones y tratamientos terapéuticos que tienen como objetivo optimizar el intercambio gaseoso del organismo.
+
+Este tratamiento consta de técnicas respiratorias que se utilizan comunmente. Entre ellas están las compresiones, vibraciones torácicas y cambios de posición del paciente, todo esto para favorecer la ventilación pulmonar, el drenaje de secreciones bronquiales y aspiración de secreciones cuando sea necesario y cuando el cuerpo lo requiera. Todas ellas para favorecer y permeabilizar las vías aéreas, además de dismunuir la obstrucción bronquial y agilizar el mecanismo de la tos.
+
+El tratamiento Kinésico Respiratorio puede realizarse en conjunto de equipos de oxigenoterapia, uso de inhaladores (puff) o de espirometría de incentivo respiratorio (Inpirex)
+
+Las enfermedades o patologías que frecuentemente necesitan de tratamiento respiratorio son bronquitis, asma bronquial, fibrosis quística y atelectasias. Los pacientes recién nacidos y enfermos críticos son los que necesitan mayor atención y monitoreo debido a que su sistema inmunológico se encuentra más débil de lo normal.
+  </p>
+</section>
+
+<footer>
+  <div class="link-pie">
+      <a href="index.html">
+     <h3>Centro de Kinesiologia Esther Ofman</h3>
+  </a>
+  <div class="diseño">
+  <h4> Diseñado por Marcelo De Angelis</h4></div>
+  </div>
+  
+  
+  </div>
+  </footer>
+   
+    
+    
+<script src="menuham.js"></script>
 </body>
 </html>

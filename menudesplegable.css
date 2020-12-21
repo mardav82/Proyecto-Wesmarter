@@ -99,7 +99,7 @@ body{
 
 }
 .submenu a{
-    background-color: violet;
+    background-color:mediumblue;
     
 
 }
@@ -144,7 +144,7 @@ h1{
     margin-bottom: 40px;
 }
 .instalaciones{
-    /*background-color: royalblue;*/
+    background-color: royalblue;
     max-width: 1000px;
     margin: auto;
     margin-bottom: 80px;
@@ -173,6 +173,9 @@ h1{
 
 }
 
+
+ 
+
 .obras-sociales{
     max-width: 300px;
     height: auto;
@@ -191,6 +194,7 @@ h1{
     
 }
 h2{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
     font-size: 40px;
     color :blue;
     text-align: center;
@@ -206,7 +210,7 @@ h2{
 
 
 .Formulario {
-    width: 500px;
+    max-width: 500px;
     /*background: #24303c;*/
     padding: 30px;
     margin: auto;
@@ -282,12 +286,21 @@ h2{
       border-radius: 30px;
       text-align: center;
   }
- 
+ iframe{
+     width: 100%;
+ }
+ .diseño{
+    
+     margin-left: 300px;
+ }
   
 
 @media (max-width: 767px){
     .pie{
         display: block;
+    }
+    .pie-datos{
+        width: 85%;
     }
     .nav-boton{
         display: block;
@@ -301,6 +314,12 @@ h2{
    }
    .link{
        border: 1px solid aliceblue;
+   }
+   .mapa{
+       display: block;
+   }
+   .zona{
+       height: 40px;
    }
  
    
