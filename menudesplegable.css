@@ -320,7 +320,9 @@ h2{
    .zona{
        height: 40px;
    }
- 
+ .diseño{
+     margin-left: 0px;
+ }
    
    
 }
