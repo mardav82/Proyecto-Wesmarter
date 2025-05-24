@@ -10,7 +10,52 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     
-    
+    <style>
+      .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        background-color: transparent;
+        border-radius: 50%;
+        padding: 0;
+        cursor: pointer;
+      }
+  
+      .whatsapp-float img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+      }
+      .swiper-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+  padding-top: 30px;
+  padding-bottom: 50px;
+    }
+    .swiper-slide {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+      
+    }
+    .swiper-wrapper {
+  display: flex;
+}
+    .swiper-pagination {
+      text-align: center;
+      bottom: 10px;
+    } 
+ 
+
+    </style>
 
     <title>Proyecto webmaster</title>
 </head>
@@ -81,39 +126,34 @@
 </div>    
 <div>
       
-      <p class="descripcion">Brindamos asistencia en las áreas de prevención, evaluación, tratamiento y recuperación de la capacidad física de las personas.</p>
+  <p class="descripcion">Brindamos asistencia en las áreas de prevención, evaluación, tratamiento y recuperación de la capacidad física de las personas.</p>
 
-    </div> 
- </div>
- <section id="instalaciones" ></section>
+</div> 
+     </div>
+<section id="instalaciones"></section>
+
 <div class="instalaciones">
-  
-   <h2> INSTALACIONES</h2>
-   <br>
-   <div class="swiper-container">
+  <h2>INSTALACIONES</h2>
+  <br>
+  <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="imagenes/centro6.jpeg" alt=""></div>
-      <div class="swiper-slide"><img src="imagenes/centro2.jpeg" alt=""></div>
-      <div class="swiper-slide"><img src="imagenes/centro1.jpeg" alt=""></div>
-      <div class="swiper-slide"><img src="imagenes/centro5.jpeg" alt=""></div>
-      <div class="swiper-slide"><img src="imagenes/centro4.jpeg" alt=""></div>
-      <div class="swiper-slide"><img src="imagenes/centro3.jpeg" alt=""></div>
-    
+      <div class="swiper-slide"><img src="imagenes/centro6.jpeg" alt="centro6"></div>
+      <div class="swiper-slide"><img src="imagenes/centro2.jpeg" alt="centro2"></div>
+      <div class="swiper-slide"><img src="imagenes/centro1.jpeg" alt="centro1"></div>
+      <div class="swiper-slide"><img src="imagenes/centro5.jpeg" alt="centro5"></div>
+      <div class="swiper-slide"><img src="imagenes/centro4.jpeg" alt="centro4"></div>
+      <div class="swiper-slide"><img src="imagenes/centro3.jpeg" alt="centro3"></div>
     </div>
-    <div  style="margin-bottom: -25px;"  class="swiper-pagination"></div>
-    
+    <div class="swiper-pagination"></div>
   
-
-   
-
- </div> 
+</div>
  <br>
  <section id="obrassociales"></section> 
   <h2>OBRAS SOCIALES</h2>
   <br>
 
   <img src="imagenes/OBRAS1.jpg">
-
+  
 </section>
 
 
@@ -169,7 +209,12 @@
 <h4> Diseñado por Marcelo De Angelis</h4></div>
 </div>
 
-
+<a aria-label="Chat on WhatsApp" href="https://api.whatsapp.com/send/?phone=11334180077"
+target="_blank"
+  class ="whatsapp-float">
+  <img alt="Chat on WhatsApp" src="imagenes/icons8-whatsapp.gif"/>
+  <span class="whatsapp-text">¡Escribinos!</span>
+</a>
 
 
 
@@ -187,8 +232,35 @@
  <!-- Initialize Swiper -->
  
     <script>
-   
-    var swiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    autoplay: {
+      delay: 3000,             // 3 segundos entre cada imagen
+      disableOnInteraction: false, // No se detiene si el usuario toca
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+   breakpoints: {
+     640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      }
+    }
+  });
+ 
+    /*var swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
       spaceBetween: 30,
       freeMode: true,
@@ -201,12 +273,12 @@
     760: {
       slidesPerView: 1,
       spaceBetween: 20
-    },780: {
+    },780
       slidesPerView: 3,
       spaceBetween: 20
     }}
     });
-    var swiper = new Swiper('.swiper-container', {
+   var swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
       spaceBetween: 10,
       // init: false,
@@ -228,10 +300,10 @@
           spaceBetween: 50,
         },
       }
-    });
+    });*/
    
-    
-  </script>
+ </script>
+
  
  
   

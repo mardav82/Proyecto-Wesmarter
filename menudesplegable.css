@@ -117,6 +117,7 @@ h1{
     max-width: 300px;
     margin: auto;
     margin-bottom: 20px;
+    border-radius: 25px;
     
 
 }
@@ -328,7 +329,7 @@ h2{
 img{
     width: 150;
     height: 50;
-    
+  
 }
 .images{
     width: 180px;
@@ -344,7 +345,8 @@ img{
  .span{
      margin-left: 0px;
  }
-   
+ 
+  
    
 }
     
