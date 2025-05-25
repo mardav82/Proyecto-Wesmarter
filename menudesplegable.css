@@ -1,3 +1,16 @@
+html, body {
+    
+    width: 100%;
+    overflow-x: hidden; /* 🔧 Esto corta cualquier scroll horizontal no deseado */
+  }
+  
+  /*.swiper-container {
+    max-width: 100vw; /* 🔧 importante en móviles 
+    overflow: hidden;
+  }*/
+  
+
+
 *{
     margin: 0;
     padding: 0;
@@ -14,6 +27,7 @@ body{
 }
 
 
+  
 
 .header{
     max-width: 1000px;
@@ -296,6 +310,34 @@ h2{
      margin-left: 300px;
      padding-top: 20px;
  }
+ .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999; /* más alto para que siempre esté encima */
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-direction: column; /* 👈 Esto apila el texto arriba del ícono */
+  align-items: center;
+  }
+  
+  .whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .whatsapp-text {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  
 
 @media (max-width: 767px){
     .pie{
@@ -345,7 +387,26 @@ img{
  .span{
      margin-left: 0px;
  }
- 
+ .whatsapp-float {
+    display: block !important;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    display: block;
+  }
+
+  .whatsapp-float img {
+    width: 60px;
+    height: 60px;
+  }
+
   
    
 }

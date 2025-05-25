@@ -11,28 +11,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     
     <style>
-      .whatsapp-float {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 1000;
-        background-color: transparent;
-        border-radius: 50%;
-        padding: 0;
-        cursor: pointer;
-      }
   
-      .whatsapp-float img {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-      }
+
       .swiper-container {
       max-width: 1200px;
       margin: 0 auto;
       width: 100%;
   padding-top: 30px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
+  max-width: 100vw; /* 🔧 importante en móviles */
+    overflow: hidden;
+  
     }
     .swiper-slide {
   background: #fff;
@@ -147,6 +136,7 @@
     <div class="swiper-pagination"></div>
   
 </div>
+
  <br>
  <section id="obrassociales"></section> 
   <h2>OBRAS SOCIALES</h2>
@@ -209,7 +199,7 @@
 <h4> Diseñado por Marcelo De Angelis</h4></div>
 </div>
 
-<a aria-label="Chat on WhatsApp" href="https://api.whatsapp.com/send/?phone=11334180077"
+<a aria-label="Chat on WhatsApp" href="https://api.whatsapp.com/send/?phone=1134180077"
 target="_blank"
   class ="whatsapp-float">
   <img alt="Chat on WhatsApp" src="imagenes/icons8-whatsapp.gif"/>
@@ -232,7 +222,7 @@ target="_blank"
  <!-- Initialize Swiper -->
  
     <script>
-  var swiper = new Swiper('.swiper-container', {
+ var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
@@ -246,7 +236,7 @@ target="_blank"
     },
    breakpoints: {
      640: {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 20,
       },
       768: {
@@ -260,53 +250,13 @@ target="_blank"
     }
   });
  
-    /*var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      freeMode: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints: {
-    // when window width is >= 320px
-    760: {
-      slidesPerView: 1,
-      spaceBetween: 20
-    },780
-      slidesPerView: 3,
-      spaceBetween: 20
-    }}
-    });
-   var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      // init: false,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 50,
-        },
-      }
-    });*/
+    
    
  </script>
 
  
  
-  
+
 
 
 </body>
