@@ -2,6 +2,8 @@ console.log('todo esta bien');
 
 // http://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires&appid=7960d229cedb00be75db9e6cf4628823&lang=es&units=metric
 
+// Consulta a la API de OpenWeatherMap para mostrar el clima de Buenos Aires
+
 var url ="https://api.openweathermap.org/data/2.5/weather?q=Buenos%20Aires&appid=7960d229cedb00be75db9e6cf4628823&lang=es&units=metric";
 fetch(url)
     .then(res =>{
@@ -14,7 +16,8 @@ fetch(url)
                 ciudad.innerHTML = data.name;
                 contenido.innerHTML= data.main.temp;
                 console.log(data.weather[0].icon);
-                const icono=`http://openweathermap.org/img/w/${data.weather[0].icon}.png`
+              //const icono=`http://openweathermap.org/img/w/${data.weather[0].icon}.png`
+              const icono=`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
                 console.log(icono);
                 imagen.setAttribute("src",icono);
 //https://meet.google.com/linkredirect?authuser=0&dest=http%3A%2F%2Fopenweathermap.org%2Fimg%2Fw%2F
